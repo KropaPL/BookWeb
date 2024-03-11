@@ -15,5 +15,11 @@ namespace BookWeb.Controllers
             var objCateogryList = _db.Categories.ToList();
             return View(objCateogryList);
         }
+
+
+        public IActionResult Create()
+        {
+	        return View();
+        }
     }
 }
